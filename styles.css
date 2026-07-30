@@ -246,6 +246,7 @@ a {
 }
 
 .listing-hero {
+  position: relative;
   display: grid;
   place-items: center;
   padding: 14px var(--page-gutter) clamp(30px, 7vw, 64px);
@@ -253,7 +254,27 @@ a {
   background: var(--black);
 }
 
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.listing-hero::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, oklch(11% 0.012 150 / 0.55), var(--black) 92%);
+  content: "";
+}
+
 .hero-card {
+  position: relative;
+  z-index: 1;
   width: min(100%, 620px);
   padding: clamp(36px, 8vw, 64px) clamp(28px, 6vw, 56px);
   border: 1px solid var(--gold-rule);
@@ -464,6 +485,36 @@ a {
   line-height: 1.5;
 }
 
+.story-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 42px;
+}
+
+.story-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: var(--black);
+}
+
+.story-gallery img {
+  display: block;
+  width: 100%;
+  height: clamp(150px, 28vw, 260px);
+  object-fit: cover;
+}
+
+.story-gallery figcaption {
+  padding: 10px 12px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .viewing-note {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -493,6 +544,18 @@ a {
   padding: var(--section-space) 0;
   background: var(--black);
   color: var(--text);
+}
+
+.property-media {
+  display: grid;
+  gap: 20px;
+  width: min(calc(100% - (var(--page-gutter) * 2)), 920px);
+  margin: 0 auto;
+}
+
+.property-media .aerial-frame {
+  width: 100%;
+  margin: 0;
 }
 
 .aerial-frame {
@@ -909,12 +972,40 @@ a {
   line-height: 1.68;
 }
 
+.land-note {
+  margin-top: 28px !important;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 0.97rem !important;
+}
+
 .document-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   margin-top: 34px;
+}
+
+.floorplan {
+  margin: 34px 0 0;
+}
+
+.floorplan img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  background: var(--white);
+}
+
+.floorplan figcaption {
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .document-links a {
