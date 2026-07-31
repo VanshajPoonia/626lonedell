@@ -34,7 +34,7 @@
     .section-head p{max-width:600px;margin:0;color:var(--muted)}
     .topbar{position:fixed;inset:0 0 auto;z-index:50;background:rgba(7,12,17,.84);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.13)}
     .topbar-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .logo{width:178px;flex:0 0 auto}
+    .logo{height:54px;width:auto;flex:0 0 auto}
     .nav{display:flex;align-items:center;gap:24px;color:#fff;font-size:.92rem}
     .nav a{text-decoration:none;opacity:.86}
     .nav a:hover{opacity:1;color:var(--gold2)}
@@ -97,7 +97,7 @@
     .map-card p{color:#dbe4eb}
     .contact{background:linear-gradient(135deg,#0b121a,#18324b);color:#fff}
     .contact-grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;justify-content:center;max-width:560px;margin:0 auto}
-    .contact-logo{width:260px;margin-bottom:28px}
+    .contact-logo{height:130px;width:auto;margin-bottom:28px}
     .contact h2{font-family:Georgia,serif;font-size:clamp(2.2rem,4vw,3.7rem);line-height:1.05;margin:0 0 16px;font-weight:500}
     .contact-links{display:grid;gap:8px;margin:24px 0}
     .contact-links a{text-decoration:none;color:#fff;font-weight:750}
@@ -123,7 +123,7 @@
     }
     @media(max-width:680px){
       html{scroll-padding-top:80px}
-      .wrap{width:min(100% - 28px,1180px)} .topbar-inner{height:68px} .logo{width:142px} .nav-cta{padding:9px 13px;font-size:.84rem}
+      .wrap{width:min(100% - 28px,1180px)} .topbar-inner{height:68px} .logo{height:42px} .nav-cta{padding:9px 13px;font-size:.84rem}
       .hero{min-height:720px;background-position:58% center} .hero-content{padding:130px 0 78px} .hero h1{font-size:3.75rem}
       .facts{margin-top:-28px} .facts-grid{grid-template-columns:repeat(2,1fr)} .fact:nth-child(odd){border-right:1px solid var(--line)} .fact:nth-child(even){border-right:0} .fact:nth-child(-n+4){border-bottom:1px solid var(--line)}
       .section{padding:64px 0} .section-head{display:block} .section-head p{margin-top:12px}
@@ -153,7 +153,7 @@
 <body>
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <a href="#top" aria-label="Shanks Realty Group home"><img class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+U2hhbmtzIFJlYWx0eSBHcm91cDwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPlNoYW5rcyBSZWFsdHkgR3JvdXAgYmxhY2ssIHdoaXRlIGFuZCBnb2xkIGxvZ288L2Rlc2M+CiAgPHJlY3Qgd2lkdGg9IjM2MCIgaGVpZ2h0PSIxMjAiIHJ4PSI0IiBmaWxsPSIjMDgwOTA5Ii8+CiAgPHJlY3QgeD0iMCIgeT0iMTExIiB3aWR0aD0iMzYwIiBoZWlnaHQ9IjkiIGZpbGw9IiNjODlhNDMiLz4KICA8ZyBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjgwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CiAgICA8dGV4dCB4PSIxODAiIHk9IjM3IiBmb250LXNpemU9IjMxIiBsZXR0ZXItc3BhY2luZz0iOCIgZmlsbD0iI2ZmZmZmZiI+U0hBTktTPC90ZXh0PgogICAgPHRleHQgeD0iMTgwIiB5PSI3MyIgZm9udC1zaXplPSIzMSIgbGV0dGVyLXNwYWNpbmc9IjgiIGZpbGw9IiNmZmZmZmYiPlJFQUxUWTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE4MCIgeT0iMTAxIiBmb250LXNpemU9IjE2IiBsZXR0ZXItc3BhY2luZz0iMTMiIGZpbGw9IiNkN2FhNTIiPkdST1VQPC90ZXh0PgogIDwvZz4KICA8cGF0aCBkPSJNMjQgOTFoNTB2NUgyNHptMzctMTRoMTN2MjhINjF6IiBmaWxsPSIjZDdhYTUyIiBvcGFjaXR5PSIuOTUiLz4KPC9zdmc+Cg==" alt="Shanks Realty Group"></a>
+      <a href="#top" aria-label="Shanks Realty Group home"><img class="logo" src="./assets/logo-trimmed.png" alt="Shanks Realty Group"></a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#overview">Overview</a><a href="#features">Features</a><a href="#gallery">Photos</a><a href="#community">Arnold</a><a href="#map">Map</a>
         <a class="nav-cta" href="tel:+13146065592">Call Bobby</a>
@@ -540,7 +540,7 @@
     <section class="section contact" id="contact">
       <div class="wrap contact-grid">
         <div>
-          <img class="contact-logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+U2hhbmtzIFJlYWx0eSBHcm91cDwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPlNoYW5rcyBSZWFsdHkgR3JvdXAgYmxhY2ssIHdoaXRlIGFuZCBnb2xkIGxvZ288L2Rlc2M+CiAgPHJlY3Qgd2lkdGg9IjM2MCIgaGVpZ2h0PSIxMjAiIHJ4PSI0IiBmaWxsPSIjMDgwOTA5Ii8+CiAgPHJlY3QgeD0iMCIgeT0iMTExIiB3aWR0aD0iMzYwIiBoZWlnaHQ9IjkiIGZpbGw9IiNjODlhNDMiLz4KICA8ZyBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjgwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CiAgICA8dGV4dCB4PSIxODAiIHk9IjM3IiBmb250LXNpemU9IjMxIiBsZXR0ZXItc3BhY2luZz0iOCIgZmlsbD0iI2ZmZmZmZiI+U0hBTktTPC90ZXh0PgogICAgPHRleHQgeD0iMTgwIiB5PSI3MyIgZm9udC1zaXplPSIzMSIgbGV0dGVyLXNwYWNpbmc9IjgiIGZpbGw9IiNmZmZmZmYiPlJFQUxUWTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE4MCIgeT0iMTAxIiBmb250LXNpemU9IjE2IiBsZXR0ZXItc3BhY2luZz0iMTMiIGZpbGw9IiNkN2FhNTIiPkdST1VQPC90ZXh0PgogIDwvZz4KICA8cGF0aCBkPSJNMjQgOTFoNTB2NUgyNHptMzctMTRoMTN2MjhINjF6IiBmaWxsPSIjZDdhYTUyIiBvcGFjaXR5PSIuOTUiLz4KPC9zdmc+Cg==" alt="Shanks Realty Group">
+          <img class="contact-logo" src="./assets/logo-trimmed.png" alt="Shanks Realty Group">
           <div class="eyebrow">Schedule a Private Tour</div>
           <h2>Talk directly with Bobby Shanks.</h2>
           <p>Bobby Shanks, Broker/Owner<br>Shanks Realty Group, LLC<br>2855 Seckman Road #108, Imperial, MO 63052</p>
